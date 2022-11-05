@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "c9625775-08ae-45f3-ae0c-218439c410b7",
+		"name": "iris_classification",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15420425"
+	},
+	"item": [
+		{
+			"name": " http://192.168.0.100:5005/prediction",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "sepal_length",
+							"value": "1.4",
+							"type": "text"
+						},
+						{
+							"key": "sepal_width",
+							"value": "2.4",
+							"type": "text"
+						},
+						{
+							"key": "petal_length",
+							"value": "1.2",
+							"type": "text"
+						},
+						{
+							"key": "petal_width",
+							"value": ".2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://192.168.0.100:5005/prediction",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"0",
+						"100"
+					],
+					"port": "5005",
+					"path": [
+						"prediction"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
